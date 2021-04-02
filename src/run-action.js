@@ -13,7 +13,7 @@ module.exports = async tools => {
   });
 
   if (hasAllRequiredLabels) {
-    tools.log.info('PR is Ready to Go Live!');
+    tools.log.info('PR is Ready!');
     return;
   }
 
@@ -23,6 +23,6 @@ module.exports = async tools => {
     }),
   );
 
-  tools.log.error(`Missing required labels to go live: ${requiredLabels}`);
+  tools.log.error(`Missing required labels to be ready: ${requiredLabels}`);
   tools.exit.failure();
 };
