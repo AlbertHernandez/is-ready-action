@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: AlbertHernandez/go-live-action@v1
         with:
-          when_contain_labels: 'Merged in Beta;Tested in Beta'
+          required_labels: 'Merged in Beta;Tested in Beta'
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -30,4 +30,4 @@ jobs:
 
 | Name | Description | Required | Default Value |
 |------|-------------|----------|---------------|
-| when_contain_labels | Labels that should contain the PR to be merged in the main branch | true | |
+| required_labels | Labels that should contain the PR to be merged in the main branch | true | |

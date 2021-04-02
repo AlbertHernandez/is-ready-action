@@ -1,0 +1,14 @@
+name: Go Live
+on:
+  pull_request:
+    types: [labeled, unlabeled]
+jobs:
+  go_live:
+    runs-on: ubuntu-latest
+    name: Go Live
+    steps:
+      - uses: AlbertHernandez/go-live-action@feature/configure-event
+        with:
+          required_labels: 'Merged in Beta;Tested in Beta'
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
