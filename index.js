@@ -8,9 +8,8 @@ Toolkit.run(
   },
   {
     event: [
-      'pull_request.opened',
-      'pull_request.edited',
-      'pull_request.synchronize',
+      'pull_request.labeled',
+      'pull_request.unlabeled',
     ],
     secrets: ['GITHUB_TOKEN'],
   },
