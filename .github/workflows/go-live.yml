@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Go Live
     steps:
-      - uses: AlbertHernandez/go-live-action@feature/configure-event
+      - uses: AlbertHernandez/go-live-action@v1.0.0
         with:
           required_labels: 'Merged in Beta;Tested in Beta'
     env:

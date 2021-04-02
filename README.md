@@ -13,13 +13,13 @@ You can create a `.github/workflows/go-live.yml` file:
 name: Go Live
 on:
   pull_request:
-    types: [opened]
+    types: [labeled, unlabeled]
 jobs:
   go_live:
     runs-on: ubuntu-latest
     name: Go Live
     steps:
-      - uses: AlbertHernandez/go-live-action@v1
+      - uses: AlbertHernandez/go-live-action@v1.0.0
         with:
           required_labels: 'Merged in Beta;Tested in Beta'
     env:
