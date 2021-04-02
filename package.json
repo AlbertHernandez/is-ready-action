@@ -1,5 +1,5 @@
 {
-  "name": "go-live",
+  "name": "is-ready-action",
   "private": true,
   "main": "index.js",
   "scripts": {

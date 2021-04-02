@@ -1,5 +1,5 @@
 <h1 align="center">🚀</h1>
-<h3 align="center">go-live-action</h3>
+<h3 align="center">is-ready-action</h3>
 
 <p align="center">
     Check if the Pull Request is Ready to be Merged in the main branch.
@@ -7,17 +7,17 @@
 
 ## Usage
 
-You can create a `.github/workflows/go-live.yml` file:
+You can create a `.github/workflows/is-ready.yml` file:
 
 ```yaml
-name: Go Live
+name: Is Ready
 on:
   pull_request:
     types: [labeled, unlabeled]
 jobs:
   go_live:
     runs-on: ubuntu-latest
-    name: Go Live
+    name: Is Ready
     steps:
       - uses: AlbertHernandez/go-live-action@v1.0.0
         with:

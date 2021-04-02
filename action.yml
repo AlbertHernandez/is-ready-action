@@ -1,4 +1,4 @@
-name: Go Live
+name: Is Ready
 description: Check if the Pull Request is Ready to be Merged in the main branch
 inputs:
   required_labels:
