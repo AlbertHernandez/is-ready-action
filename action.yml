@@ -1,7 +1,7 @@
 name: Go Live
 description: Check if the Pull Request is Ready to be Merged in the main branch
 inputs:
-  when_contain_labels:
+  required_labels:
     description: 'Labels that should contain the PR to be merged in the main branch'
     required: true
 runs:

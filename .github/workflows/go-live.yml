@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: AlbertHernandez/go-live-action@feature/configure-event
         with:
-          when_contain_labels: 'Merged in Beta;Tested in Beta'
+          required_labels: 'Merged in Beta;Tested in Beta'
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
