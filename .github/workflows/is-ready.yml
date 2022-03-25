@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Is Ready
     steps:
-      - uses: AlbertHernandez/is-ready-action@v1.0.0
+      - uses: AlbertHernandez/is-ready-action@v1
         with:
           required_labels: 'Merged in Beta;Tested in Beta'
     env:
