@@ -11,9 +11,7 @@ You can create a `.github/workflows/is-ready.yml` file:
 
 ```yaml
 name: Is Ready
-on:
-  pull_request:
-    types: [labeled, unlabeled]
+on: [pull_request]
 jobs:
   go_live:
     runs-on: ubuntu-latest
