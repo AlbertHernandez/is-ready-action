@@ -11,17 +11,20 @@ You can create a `.github/workflows/is-ready.yml` file:
 
 ```yaml
 name: Is Ready
-on: [pull_request]
+on:
+  pull_request:
+    types: [labeled, unlabeled, opened]
 jobs:
   go_live:
     runs-on: ubuntu-latest
     name: Is Ready
     steps:
-      - uses: AlbertHernandez/is-ready-action@v1
+      - uses: AlbertHernandez/is-ready-action@v1.1.0
         with:
           required_labels: 'Merged in Beta;Tested in Beta'
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 ```
 
 ## Inputs
