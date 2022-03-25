@@ -2,7 +2,7 @@
 <h3 align="center">is-ready-action</h3>
 
 <p align="center">
-    Check if the Pull Request is Ready to be Merged in the main branch.
+    Test Check if the Pull Request is Ready to be Merged in the main branch.
 </p>
 
 ## Usage
